@@ -2,7 +2,7 @@
 
 from collections import Counter
 
-arr=[1,1,1,2,2,2]
+arr=[1,1,1,1,2,2,2,2,2]
 cnt = Counter(arr)
 order = cnt.most_common()
 
