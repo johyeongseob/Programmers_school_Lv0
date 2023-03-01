@@ -44,3 +44,16 @@ def solution(n):
 n명의 사람이 최소 한 조각 이상 피자를 먹으려면 최소 몇 판의 피자를 시켜야 하는지를 return 하도록 solution 함수를 완성해보세요.
 """
 
+def solution(slice, n):
+    answer=0
+    if n%slice ==0:
+        answer=n/slice
+    else:
+        answer=n//slice+1
+    return answer
+
+# better solution
+
+def solution(slice, n):
+    return ((n - 1) // slice) + 1
+
